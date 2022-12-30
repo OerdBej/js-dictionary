@@ -9,15 +9,15 @@
 }
 
 body {
-  background-color: rgba(255, 68, 0, 0.315);
+  background-color: #ae9cff;
 }
 .container {
   background-color: #ffffff;
-  width: 90rem;
+  width: 90vmin;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
-  bottom: 50%;
+  left: 50%;
   padding: 80px 50px;
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(38, 33, 61, 0.2);
@@ -39,11 +39,52 @@ body {
 }
 
 .search-box button {
-  padding: 5px 0;
+  padding: 15px 0;
   width: 25%;
   background-color: #ae9cff;
   border: none;
   outline: none;
   color: #ffffff;
   border-radius: 5px;
+}
+
+.result {
+  position: relative;
+}
+
+.result h3 {
+  font-size: 30px;
+  color: #1f194c;
+}
+
+.result .word {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+
+.result button {
+  background-color: transparent;
+  color: #ae9cff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.result .details {
+  display: flex;
+  gap: 13px;
+  color: #b3b6d4;
+  font-size: 14px;
+}
+
+.word-meaning {
+  color: #4a4b55;
+}
+.word-example {
+  color: #4a4b55;
+  font-style: italic;
+  border-left: 5px solid #ae9cff;
+  padding-left: 20px;
+  margin-top: 20px;
 }
