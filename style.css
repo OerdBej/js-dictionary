@@ -88,3 +88,9 @@ body {
   padding-left: 20px;
   margin-top: 20px;
 }
+
+.error {
+  margin-top: 80px;
+  text-align: center;
+  color: #4a4b55;
+}

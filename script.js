@@ -34,9 +34,10 @@ btn.addEventListener("click", () => {
 </div>`;
 
       // set song attribute
-
       sound.setAttribute("src", `${data[0].phonetics[1].audio}`);
-      console.log(sound);
+    })
+    .catch(() => {
+      result.innerHTML = `<h3 class="error">Couldn't find the word </h3>`;
     });
 });
 
